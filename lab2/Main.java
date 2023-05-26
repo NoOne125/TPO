@@ -6,7 +6,7 @@ import Models.Result;
 
 public class Main {
     public static void main(String[] args) {
-        int sizeOfMatrix = 1000;
+        int sizeOfMatrix = 3000;
         int numOfThreads = 6;
         int blockSize = 40;
 
@@ -37,13 +37,13 @@ public class Main {
         System.out.println("Efficiency:" + (double)resultOfStandard.time / resultOfFox.time);
         System.out.println();
 
-        Striped striped = new Striped(matrix1, matrix2, numOfThreads);
-        Result resultOfStriped = striped.multiply();
-        System.out.println("Matrix After Striped Callable Multiply:");
+        //Striped striped = new Striped(matrix1, matrix2, numOfThreads);
+        //Result resultOfStriped = striped.multiply();
+        //System.out.println("Matrix After Striped Callable Multiply:");
         //resultOfStriped.matrix.print();
-        System.out.println("Time:" + resultOfStriped.time);
-        System.out.println("Efficiency:" + (double)resultOfStandard.time / resultOfStriped.time);
-        System.out.println();
+        //System.out.println("Time:" + resultOfStriped.time);
+        //System.out.println("Efficiency:" + (double)resultOfStandard.time / resultOfStriped.time);
+        //System.out.println();
 
     }
 }

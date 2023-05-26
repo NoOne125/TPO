@@ -4,9 +4,9 @@ import java.util.concurrent.*;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException, ExecutionException{
-        task1();
+        //task1();
         //task2();
-        //task3();
+        task3();
     }
     public static void task1() {
         QueueCallable task = new QueueCallable();
@@ -17,7 +17,7 @@ public class Main {
     }
     public static void task2() throws InterruptedException, ExecutionException {
         int poolsCount = 5;
-        ExecutorService executor = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
+        ExecutorService executor = Executors.newFixedThreadPool(6);
         List<Callable<Analyst>> tasks = new ArrayList<>();
 
         for (int i = 0; i < poolsCount; i++) {

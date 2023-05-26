@@ -9,7 +9,7 @@ public class QueueCallable implements Callable<Analyst> {
 
     QueueCallable() {
         this.isObserving = false;
-        this.numOfConsumers = 4;
+        this.numOfConsumers = 3;
     }
     QueueCallable(int queueCapacity) {
         this.isObserving = false;

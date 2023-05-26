@@ -13,7 +13,7 @@ public class Producer extends Thread {
         long startTime = System.currentTimeMillis();
         long currentTime = 0;
 
-        while (currentTime < 10_000) {
+        while (currentTime < 5_000) {
             this.manager.addItem(random.nextInt(100));
 
             try {

@@ -39,7 +39,7 @@ public class BounceFrame extends JFrame {
         JPanel buttonPanel = new JPanel();
         buttonPanel.setBackground(Color.lightGray.brighter());
 
-        //JButton buttonAddGray = new JButton("Add Gray");
+        JButton buttonAddGray = new JButton("Add Gray");
         //JButton buttonAddRed = new JButton("Add Red");
         //JButton buttonAddBlue = new JButton("Add Blue");
         JButton buttonTest = new JButton("Run Run Run!");
@@ -47,14 +47,14 @@ public class BounceFrame extends JFrame {
         JButton buttonJoinRed = new JButton("Join Red");
         JButton buttonJoinBlue = new JButton("Join Blue");
 
-        /*buttonAddGray.addActionListener(new ActionListener() {
+        buttonAddGray.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 createBall(0);
             }
         });
 
-        buttonAddRed.addActionListener(new ActionListener() {
+        /*buttonAddRed.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 createBall(1);
@@ -73,7 +73,7 @@ public class BounceFrame extends JFrame {
         buttonTest.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                for (int i = 0; i < 50; i++) {
+                for (int i = 0; i < 500; i++) {
                     createBall(-1);
                 }
                 createBall(1);
@@ -105,7 +105,7 @@ public class BounceFrame extends JFrame {
             }
         });
 
-        //buttonPanel.add(buttonAddGray);
+        buttonPanel.add(buttonAddGray);
         //buttonPanel.add(buttonAddRed);
         //buttonPanel.add(buttonAddBlue);
         buttonPanel.add(buttonTest);
